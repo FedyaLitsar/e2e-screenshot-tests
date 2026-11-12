@@ -28,7 +28,7 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      
       - name: Run E2E tests
-        run: npx playwright test --project=chromium --test-ignore="**/screenshots/**"
+        run: npx playwright test --config=playwright.ci.config.js
+
 
