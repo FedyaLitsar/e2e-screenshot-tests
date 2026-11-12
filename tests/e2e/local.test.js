@@ -16,7 +16,7 @@ test('Перевірка форми входу', async ({ page }) => {
 test('Перевірка заголовка сторінки', async ({ page }) => {
   await page.goto('http://localhost:3000');
 
-  await expect(page).toHaveTitle(/Локальна сторінка/);
+  await expect(page).toHaveTitle(/Неіснуючий заголовок/);
 });
 
 // Тест 3. Перевірка обов'язкових полів
